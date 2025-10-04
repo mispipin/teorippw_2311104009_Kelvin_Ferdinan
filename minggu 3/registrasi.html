@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <style>
+            #header {
+                float:left;
+                width: 100%;
+                background: #5A415D;
+                height: 100px;
+                text-align: center;
+                color: #ffffff;
+            }
+            #menu {
+                float:left;
+                width: 100%;
+                background: #A69CAC;
+                height: auto;
+                text-align: center;
+                color: #ffffff;
+            }
+            #l-side {
+                float:left;
+                width: 20%;
+                background: #D6CADD;
+                min-height: 400px;
+                text-align: center;
+                color: #000000;
+            }
+            #content {
+                float:left;
+                width: 60%;
+                background: #EDE7F1;
+                min-height: 400px;
+                color: #000000;
+            }
+            #r-side {
+                float:left;
+                width: 20%;
+                background: #D6CADD;
+                min-height: 400px;
+                text-align: center;
+                color: #000000;
+            }
+            #footer {
+                float:left;
+                width: 100%;
+                background: #5A415D;
+                min-height: 80px;
+                text-align: center;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">header</div>
+
+        <div id="menu">
+            <a href="index.html">beranda</a>  
+            <a href="produk.html">produk</a>  
+            <a href="member.html">member</a> 
+            <a href="registrasi.html">registrasi</a>
+            <a href="administrator.html">administrator</a>
+        </div>
+
+        <div id="l-side">populer</div>
+
+        <div id="content">
+            <h3>Form Registrasi</h3>
+            <table>
+                <form>
+                    <tr>
+                        <td>Nama lengkap</td><td>:</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>ttl</td><td>:</td>
+                        <td><input type="text" name="tempat"><input type="date" name="tanggal"></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td><td>:</td>
+                        <td><textarea name="alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td><td>:</td>
+                        <td><input type="radio" name="L"> Laki-laki
+                            <input type="radio" name="P"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td><td>:</td>
+                        <td>
+                            <select name="agama">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghucu">Konghucu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobi</td><td>:</td>
+                        <td><input type="checkbox" name="hobi" value="Membaca"> Membaca
+                            <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+                            <input type="checkbox" name="hobi" value="Musik"> Musik
+                            <input type="checkbox" name="hobi" value="Traveling"> Traveling
+                            <input type="checkbox" name="hobi" value="Menulis"> Menulis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Simpan" name="simpan">
+                            <input type="reset" value="Reset" name="reset">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            
+        </div>
+
+        <div id="r-side">advertise</div>
+
+        <div id="footer">footer</div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <style>
+            #header {
+                background: #5A415D;
+                height: 100px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 28px;
+                line-height: 100px;
+                font-weight: bold;
+            }
+            #menu {
+            background: #A69CAC;
+            padding: 10px;
+            text-align: center;
+            }
+            #menu a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+            }
+            #menu a:hover {
+                text-decoration: underline;
+            }
+            #l-side {
+                width: 20%;
+                background: #D6CADD;
+                min-height: auto;
+                text-align: center;
+                color: #000000;
+            }
+            #content {
+                width: 60%;
+                background: #EDE7F1;
+                min-height: auto;
+                color: #000000;
+                padding: 20px; /* kasih ruang dalam */
+                box-sizing: border-box; /* supaya padding tidak menambah lebar */
+            }
+            #r-side {
+                width: 20%;
+                background: #D6CADD;
+                min-height: auto;
+                text-align: center;
+                color: #000000;
+            }
+            #footer {   
+                width: 100%;
+                background: #5A415D;
+                min-height: 80px;
+                text-align: center;
+                color: #ffffff;
+            }
+            .produk-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                max-width: 500px;  /* batasi lebar total grid */
+                margin: 0 auto;    /* center */
+                text-align: center;
+            }
+            #lihat-semua {
+                text-align: center;
+                margin-top: 20px;
+            }
+            #bakso {
+                width: 100%;
+                max-width: 150px;  /* gambar tidak terlalu besar */
+                height: auto;
+                border-radius: 8px;
+            }
+            .produk-item {
+                background: #fff;
+                border-radius: 10px;
+                padding: 15px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            }
+            .produk-item h3 {
+                margin: 10px 0 5px;
+            }
+            .produk-item p {
+                margin: 0;
+                font-weight: bold;
+                color: #5A415D;
+            }
+            #main {
+                display: flex;
+                align-items: stretch;  
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">Produk</div>
+
+        <div id="menu">
+            <a href="index.html">beranda</a>  
+            <a href="produk.html">produk</a>  
+            <a href="member.html">member</a> 
+            <a href="registrasi.html">registrasi</a>
+            <a href="administrator.html">administrator</a>
+        </div>
+        <div id="main">
+            <div id="l-side">populer</div>
+
+            <div id="content">
+                <h2 style="text-align: center;">Daftar Produk</h2><br>
+                <div class="produk-container">
+                    <div class="produk-item">
+                        <img src="assets/images/download (2).jpeg" alt="Produk 1" id="bakso">
+                        <h3>Produk 1</h3>
+                        <p>Rp 50.000</p>
+                    </div>
+                    <div class="produk-item">
+                        <img src="assets/images/download (2).jpeg" alt="Produk 2" id="bakso">
+                        <h3>Produk 2</h3>
+                        <p>Rp 75.000</p>
+                    </div>
+                    <div class="produk-item">
+                        <img src="assets/images/download (2).jpeg" alt="Produk 3" id="bakso">
+                        <h3>Produk 3</h3>
+                        <p>Rp 100.000</p>
+                    </div>
+                    <div class="produk-item">
+                        <img src="assets/images/download (2).jpeg" alt="Produk 4" id="bakso">
+                        <h3>Produk 4</h3>
+                        <p>Rp 120.000</p>
+                    </div>
+                </div>
+                <br>
+                <div id="lihat-semua" >
+                    <a href="produk.html">Lihat Semua Produk</a>
+                </div>
+
+                
+            </div>
+
+            <div id="r-side">advertise</div>
+        </div>
+
+        <div id="footer">footer</div>
+    </body>
+</html>
