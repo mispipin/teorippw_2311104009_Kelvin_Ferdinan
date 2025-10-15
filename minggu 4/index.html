@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #h1 {
+            color: red;
+        }
+        #body {
+            background-color: blueviolet;
+        }
+        .div1 {
+            background-color: green;
+            margin-left: 20px;
+            max-width: fit-content;
+            border-radius: 50px;
+            position: relative;
+        }
+
+        .div1:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1 id="h1">Hello World</h1>
+    <div class="div1 ">
+        <p style="font-size: 20px;">This is a sample paragraph.</p>
+    </div>
+
+    <script>
+    const div = document.querySelector('.div1');
+    let pos = 0;      // posisi awal
+    let arah = 1;     // 1 = naik, -1 = turun
+    const maxLompat = 100; // tinggi maksimum lompatan (px)
+    const kecepatan = 2;   // seberapa cepat gerakannya
+
+    function lompat() {
+      pos += arah * kecepatan;
+      div.style.top = pos + 'px';
+
+      // ganti arah kalau sudah sampai batas atas/bawah
+      if (pos >= maxLompat || pos <= 0) {
+        arah *= -1;
+      }
+
+      requestAnimationFrame(lompat); // panggil lagi terus untuk animasi halus
+    }
+
+    lompat(); // mulai animasi
+  </script>
+</body>
+</html>
